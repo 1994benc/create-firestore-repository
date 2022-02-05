@@ -11,7 +11,7 @@ const getColoredText = (text, color) => {
   }
   return color + text + RESET;
 };
-
+// From https://stackoverflow.com/questions/2970525/converting-any-string-into-camel-case
 function toCamelCase(str) {
   return str
     .replace(new RegExp("-", "g"), " ")
@@ -21,6 +21,7 @@ function toCamelCase(str) {
     .replace(/\s+/g, "");
 }
 
+// From https://stackoverflow.com/questions/4068573/convert-string-to-pascal-case-aka-uppercamelcase-in-javascript
 function toPascalCase(text) {
   return `${text}`
     .replace(new RegExp("-", "g"), " ")
