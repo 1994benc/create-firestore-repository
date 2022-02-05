@@ -1,0 +1,10 @@
+{
+  "name": "create-firestore-repository",
+  "version": "0.0.1",
+  "description": "Create firestore repositories",
+  "bin":{
+    "create-firestore-repository": "bin/create-firestore-repository.js"
+  },
+  "author": "Ben Chomsang",
+  "license": "MIT"
+}
