@@ -126,10 +126,12 @@ export default function ${toCamelCase("use " + namePlural)}() {
             }));
 
             setData(data);
-            return () => {
-                unsub();
-            };
+           
         });
+
+        return () => {
+            unsub();
+        };
     }, []);
 
     return data;
@@ -182,10 +184,12 @@ export default function ${toCamelCase("use " + name)}(id: string) {
             });
 
             setData(data);
-            return () => {
-                unsub();
-            };
+            
         });
+
+        return () => {
+            unsub();
+        };
     }, [id]);
 
     return data;
